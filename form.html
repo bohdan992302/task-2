@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Пройдіть опитування</title>
+        <link rel="shortcut icon" href="org/2.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>Моя анкета про спорт</h1>
+        </header>
+        <main>
+            <form method="POST" action="https://formspree.io/bohdandidus@gmail.com">
+                <label>
+                    <input type="reset" value="Очистити інформацію">
+                </label>
+                <br>
+                <br>
+                <label for="user-name">
+                    Ім'я користувача: <input type="text" id="user-name" name="user-name">
+                </label>
+                <br>
+                <label for="user-email">
+                    Електронна адреса: <input type="email" id="user-email" name="user-email">
+                </label>
+                <br>
+                <label>Введіть пароль:</label>
+                <label for="user-password">
+                    <input type="password" id="user-password" name="user-password" maxlength="7">
+                </label>
+                <br>
+                <label for="start">
+                    Дата народження: <input type="datetime-local" id="start" name="bdate" value="Дата народження">
+                    <!--Помилка у валідаторі -->
+                </label>
+                <br>
+                <label>Оберіть країну:</label>
+                <select name="country">
+                    <option value="Україна">Україна</option>
+                    <option value="Молдова">Молдова</option>
+                    <option value="Румунія">Румунія</option>
+                    <option value="Польша">Польша</option>
+                    <option value="Франція">Франція</option>
+                </select>
+                <br>
+                <label>Виберіть стать</label>
+                <label>
+                    <input type="radio" name="gender" value="male">Чоловік
+
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">Жінка
+
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">Інше
+
+                </label>
+                <br>
+                <h2>Дайте відповідь на декілька питань</h2>
+                <fieldset>
+                    <legend>Що дає Вам спортивний спосіб життя?</legend>
+                    <label>
+                        <input type=radio name="answer" value="Гарну фізичну форму">Гарну фізичну форму
+
+                    </label>
+                    <br>
+                    <label>
+                        <input type=radio name="answer" value="Підвищення імунітету">Підвищення імунітету
+
+                    </label>
+                    <br>
+                    <label>
+                        <input type=radio name="answer" value="Проведення вільного часу з користю">Проведення вільного часу з користю
+
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Чи отримуєте ви задоволення від заняття спортом?</legend>
+                    <label>
+                        <input type=radio name="answer1" value="Так">Так
+
+                    </label>
+                    <br>
+                    <label>
+                        <input type=radio name="answer1" value="Ні">Ні
+
+                    </label>
+                    <br>
+                    <label>
+                        <input type=radio name="answer1" value="Не знаю">Не знаю
+
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Хто запропонував вам почати займатися спортом?</legend>
+                    <label>
+                        <input type=radio name="answer2" value="Батьки">Батьки
+
+                    </label>
+                    <br>
+                    <label>
+                        <input type=radio name="answer2" value="Друзі">Друзі
+
+                    </label>
+                    <br>
+                    <label>
+                        <input type=radio name="answer2" value="Лікарі">Лікарі
+
+                    </label>
+                    <br>
+                    <label>
+                        <input type=radio name="answer2" value="Не займаюсь">Не займаюсь
+
+                    </label>
+                </fieldset>
+                <br>
+                <h2>Розкажіть про себе</h2>
+                <fieldset>
+                    <label for="coments">Введіть коментар</label>
+                    <br>
+                    <textarea id="coments" name="comments"></textarea>
+                    <br>
+                    <label>Завантажити файл про себе:</label>
+                    <br>
+                    <input type="file" name="user-about">
+                </fieldset>
+                <br>
+                <label>
+                    <input type="checkbox" name="areegment">Я не робот
+
+
+                </label>
+                <br>
+                <input type="submit" name="send" value="Відправити">
+            </form>
+        </main>
+        <br>
+        <footer>
+            <a href="index.html">
+                <strong>Повернутися на головну</strong>
+            </a>
+        </footer>
+    </body>
+</html>
